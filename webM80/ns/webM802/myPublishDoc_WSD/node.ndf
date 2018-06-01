@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_nsName">webM802:myPublishDoc_WSD</value>
+  <value name="node_pkg">webM80</value>
+  <Boolean name="inbound">true</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">http://VMKRHAUTO1/webM802</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <null name="externalWSDL"/>
+  <null name="externalWSDLURL"/>
+  <value name="definitionName">myPublishDoc_WSD</value>
+  <value name="version">_8_0</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">webM802_myPublishDoc_WSD_Binder</value>
+      <value name="bindingName">webM802_myPublishDoc_WSD_Binder</value>
+      <value name="bindingStyle">document</value>
+      <value name="bindingUse">literal</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">webM802_myPublishDoc_WSD_Port</value>
+      <value name="portTypeName">myPublishDoc_WSD_PortType</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">http</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="webM802_myPublishDoc_WSD_Binder_myPublishDoc">myPublishDoc</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">myPublishDoc</value>
+      <value name="serviceName">webM802:myPublishDoc</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">myPublishDoc</value>
+          <value name="nsOwner">webM802:myPublishDoc</value>
+          <number name="nsOwnerType" type="Integer">1</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="originalDocName"></value>
+        </record>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">myPublishDocResponse</value>
+          <value name="nsOwner">webM802:myPublishDoc</value>
+          <number name="nsOwnerType" type="Integer">2</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="originalDocName"></value>
+        </record>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="tns">http://VMKRHAUTO1/webM802</value>
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="http">http://schemas.xmlsoap.org/wsdl/http/</value>
+    <value name="mime">http://schemas.xmlsoap.org/wsdl/mime/</value>
+    <value name="soapenc">http://schemas.xmlsoap.org/soap/encoding/</value>
+    <value name="soap12">http://schemas.xmlsoap.org/wsdl/soap12/</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="soapjms">http://www.w3.org/2008/07/soap/bindings/JMS/</value>
+  </record>
+  <Boolean name="stack71X">true</Boolean>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+</Values>
